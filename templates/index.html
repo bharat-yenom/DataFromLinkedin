@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload CSV File</title>
+    <title>LinkedIn Data Extractor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,9 +64,9 @@
 <body>
     <div class="container">
         <h1>Upload CSV File</h1>
-        <form action="/get-details" method="post" enctype="multipart/form-data">
+        <form action="/process_csv" method="post" enctype="multipart/form-data">
             <input type="file" name="file" accept=".csv"><br>
-            <button type="submit">Upload</button>
+            <button type="submit">Submit</button>
         </form>
 
         {% if result_file %}
